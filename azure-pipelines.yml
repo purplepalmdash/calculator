@@ -18,6 +18,6 @@ steps:
 - script: |
     npm install
     npm run build
-    uname -a && cat /proc/cpuinfo && free -m && df -h && pwd && whoami
+    uname -a && cat /proc/cpuinfo && free -m && df -h && pwd && whoami && cat /etc/issue
     npm test
   displayName: 'npm install, build, and test'
